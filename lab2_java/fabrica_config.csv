@@ -1,0 +1,10 @@
+#,CommentCommand
+POP,PopCommand
+PUSH,PushCommand
++,PlusCommand
+-,MinusCommand
+*,MultiplyCommand
+/,DivisionCommand
+PRINT,PrintCommand
+DEFINE,DefineCommand
+SQRT,SqrtCommand

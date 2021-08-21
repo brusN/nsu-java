@@ -1,0 +1,22 @@
+Minesweeper game v1.0
+=== Commands ===
+    1. back - Returns to previous scene
+    2. exit - Exit from application
+    3. resize [small/medium/large] - Resizes game field
+    4. mark [x] [y] - Set flag on cell
+    5. unmark [x] [y] - Set flag on cell
+    6. open [x] [y] - Open the cell
+    7. restart - Restart game
+
+=== Rules ===
+    1. You should defuse bombs and open whole game field
+    2. The cell value indicates the number of bombs nearby within a radius of one cell
+
+=== Designations ===
+    1. · - not opened cell
+    2. 'nothing' - opened cell with zero bombs around
+    3. 'number' - bombs around the cell
+    4. F - marked cell
+    5. * - bomb
+
+Developed by brusN

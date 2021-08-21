@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.minesweeper.controller.HighscoresController">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="360.0" />
+      <ImageView fitHeight="70.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/topbar_easy.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutY="70.0" prefHeight="360.0" prefWidth="360.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="360.0">
+               <children>
+                  <TableView fx:id="highscoreTableView" prefHeight="360.0" prefWidth="360.0">
+                    <columns>
+                      <TableColumn fx:id="nicknameColumn" prefWidth="113.59997183084488" text="Nickname" />
+                        <TableColumn fx:id="recordTileColumn" prefWidth="229.59999084472656" text="Time (ms)" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="114.0" layoutY="21.0" text="HIGHSCORES">
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backButton" fitHeight="40.0" fitWidth="40.0" layoutX="306.0" layoutY="15.0" onMouseClicked="#switchToMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/back_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
