@@ -56,7 +56,7 @@ public class GameController implements Initializable {
 
 
     private Player playerProfile;
-    private Timer timer;
+    private Timer timer = new Timer();
     private final ThreadSafeTimerCounter timerCounter;
     private final static HashMap<String, Image> images;
     private final GameModel gameModel;
@@ -208,6 +208,7 @@ public class GameController implements Initializable {
 
     @FXML
     private void startNewGame() {
+        stopTimer();
         gameModel.newGame();
         resetViewCells();
         setMouseActionsForCells();
