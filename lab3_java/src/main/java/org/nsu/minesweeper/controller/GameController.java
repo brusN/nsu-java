@@ -185,6 +185,7 @@ public class GameController implements Initializable {
         switch (status) {
             case WIN: {
                 statusIcon.setImage(getImage("STATUS_WIN"));
+                updatePlayerRecordTime();
                 break;
             }
             case LOSE: {
@@ -194,7 +195,6 @@ public class GameController implements Initializable {
         }
         lockMouseActions();
         stopTimer();
-        updatePlayerRecordTime();
     }
 
     private void resetViewCells() {
